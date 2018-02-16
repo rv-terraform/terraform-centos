@@ -2,6 +2,9 @@ variable "subscription_id" {}
 variable "tenant_id" {}
 variable "client_id" {}
 variable "client_secret" {}
+variable "localtion" {
+   default = "canadaeast"   
+}
 
 provider "azurerm" {
    subscription_id = "${var.subscription_id}"
